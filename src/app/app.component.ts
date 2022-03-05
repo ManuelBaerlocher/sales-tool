@@ -1,5 +1,5 @@
-import { Component, OnChanges, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+
 import { AuthService } from './shared/services/auth.service';
 
 @Component({
@@ -12,8 +12,8 @@ import { AuthService } from './shared/services/auth.service';
 
 export class AppComponent implements OnInit {
 
-  
-  constructor(public authService: AuthService, public router: Router) {
+
+  constructor(public authService: AuthService) {
 
   }
   ngOnInit(): void {
