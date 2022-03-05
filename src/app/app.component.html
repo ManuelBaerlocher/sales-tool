@@ -1,1 +1,53 @@
-<router-outlet></router-outlet>
+<mat-drawer-container class="mat-drawer-container" autosize>
+    <mat-drawer #drawer class="sidenav" [opened]="true" mode="side" >
+        <div class="logo-container">Logo</div>
+        <div class="menu-items-container">
+            <ul class="menu-items">
+                <li routerLink="/dashboard/" *ngIf="this.authService.isLoggedIn">
+                    <mat-icon>fact_check</mat-icon>Übersicht
+                </li>
+                <li routerLink="/user/" *ngIf="this.authService.isLoggedIn">">
+                    <mat-icon>person_outline</mat-icon>Besuchsberricht
+                </li>
+                <li routerLink="/user/" *ngIf="this.authService.isLoggedIn">">
+                    <mat-icon>person_outline</mat-icon>Flyer senden
+                </li>
+                <li routerLink="/user/" *ngIf="this.authService.isLoggedIn">">
+                    <mat-icon>person_outline</mat-icon>Pendenzen
+                </li>
+
+
+            </ul>
+            <ul class="menu-items">
+                <li routerLink="/settings/" *ngIf="this.authService.isLoggedIn">">
+                    <mat-icon>fact_check</mat-icon>Einstellungen
+                </li>
+                <li routerLink="/user/">
+                    <mat-icon>person_outline</mat-icon>Impressum
+                </li>
+                <li (click)="authService.SignOut()" *ngIf="this.authService.isLoggedIn">">
+                    <mat-icon>person_outline</mat-icon>Logout
+                </li>
+
+            </ul>
+        </div>
+
+    </mat-drawer>
+
+    <div class="example-sidenav-content">
+        <mat-toolbar color="primary">
+            <mat-toolbar-row>
+
+
+                <mat-icon class="menu-icon" (click)="drawer.toggle()">menu</mat-icon>
+
+                <span>MB-Vertriebs-Tool</span>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <div class="router-container">
+            <router-outlet></router-outlet>
+        </div>
+
+    </div>
+
+</mat-drawer-container>
