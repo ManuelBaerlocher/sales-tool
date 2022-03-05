@@ -34,8 +34,14 @@ import { FlayertransmitComponent } from './flayertransmit/flayertransmit.compone
 import { PendingissuesComponent } from './pendingissues/pendingissues.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
+import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
+import { DialogAddVisitreportComponent } from './dialog-add-visitreport/dialog-add-visitreport.component';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatDatepickerModule } from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import { MatSelectModule} from '@angular/material/select';
 
 
 
@@ -54,6 +60,8 @@ import {MatButtonModule} from '@angular/material/button';
     VisitreportComponent,
     FlayertransmitComponent,
     PendingissuesComponent,
+    DialogAddVisitreportComponent,
+
 
 
   ],
@@ -79,7 +87,12 @@ import {MatButtonModule} from '@angular/material/button';
     MatInputModule,
     ReactiveFormsModule,
     MatButtonModule,
-    
+    MatDialogModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatFormFieldModule,
+    MatSelectModule,
+
 
   ],
   providers: [AuthService],
