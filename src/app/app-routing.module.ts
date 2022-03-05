@@ -8,6 +8,10 @@ import { VerifyEmailComponent } from './authentication/verify-email/verify-email
 // route guard
 import { AuthGuard } from './shared/guard/auth.guard';
 import { SettingsComponent } from './settings/settings.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { FlayertransmitComponent } from './flayertransmit/flayertransmit.component';
+import { PendingissuesComponent } from './pendingissues/pendingissues.component';
+import { VisitreportComponent } from './visitreport/visitreport.component';
 
 
 
@@ -20,6 +24,10 @@ const routes: Routes = [
   { path: 'forgot-password', component: ForgotPasswordComponent },
   { path: 'verify-email-address', component: VerifyEmailComponent },
   { path: 'settings', component: SettingsComponent},
+  { path: 'imprint', component: ImprintComponent},
+  { path: 'flayer', component: FlayertransmitComponent},
+  { path: 'pending', component: PendingissuesComponent},
+  { path: 'visitreport', component: VisitreportComponent},
 
 
 ];

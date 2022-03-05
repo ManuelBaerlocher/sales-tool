@@ -6,26 +6,27 @@
                 <li routerLink="/dashboard/" *ngIf="this.authService.isLoggedIn">
                     <mat-icon>fact_check</mat-icon>Übersicht
                 </li>
-                <li routerLink="/user/" *ngIf="this.authService.isLoggedIn">">
+                <li routerLink="/visitreport/" *ngIf="this.authService.isLoggedIn">
                     <mat-icon>person_outline</mat-icon>Besuchsberricht
                 </li>
-                <li routerLink="/user/" *ngIf="this.authService.isLoggedIn">">
-                    <mat-icon>person_outline</mat-icon>Flyer senden
+                <li routerLink="/flayer/" *ngIf="this.authService.isLoggedIn">
+                    <mat-icon>person_outline</mat-icon>Flayer senden
                 </li>
-                <li routerLink="/user/" *ngIf="this.authService.isLoggedIn">">
+                <li routerLink="/pending/" *ngIf="this.authService.isLoggedIn">
                     <mat-icon>person_outline</mat-icon>Pendenzen
                 </li>
 
 
             </ul>
             <ul class="menu-items">
-                <li routerLink="/settings/" *ngIf="this.authService.isLoggedIn">">
+                <li routerLink="/settings/" *ngIf="this.authService.isLoggedIn">
                     <mat-icon>fact_check</mat-icon>Einstellungen
                 </li>
-                <li routerLink="/user/">
+                <li routerLink="/imprint/">
+                     
                     <mat-icon>person_outline</mat-icon>Impressum
                 </li>
-                <li (click)="authService.SignOut()" *ngIf="this.authService.isLoggedIn">">
+                <li (click)="authService.SignOut()" *ngIf="this.authService.isLoggedIn">
                     <mat-icon>person_outline</mat-icon>Logout
                 </li>
 

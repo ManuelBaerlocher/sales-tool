@@ -24,9 +24,21 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
+import { MatRadioModule } from '@angular/material/radio';
 
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
 import { SettingsComponent } from './settings/settings.component';
+import { ImprintComponent } from './imprint/imprint.component';
+import { VisitreportComponent } from './visitreport/visitreport.component';
+import { FlayertransmitComponent } from './flayertransmit/flayertransmit.component';
+import { PendingissuesComponent } from './pendingissues/pendingissues.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
+
+
+
 
 
 @NgModule({
@@ -38,7 +50,11 @@ import { SettingsComponent } from './settings/settings.component';
     ForgotPasswordComponent,
     VerifyEmailComponent,
     SettingsComponent,
-    
+    ImprintComponent,
+    VisitreportComponent,
+    FlayertransmitComponent,
+    PendingissuesComponent,
+
 
   ],
   imports: [
@@ -56,7 +72,15 @@ import { SettingsComponent } from './settings/settings.component';
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatRadioModule,
+    FormsModule,
+    MatCheckboxModule,
+    MatInputModule,
+    ReactiveFormsModule,
+    MatButtonModule,
+    
+
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]

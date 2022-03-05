@@ -3,10 +3,12 @@
     <div class="authBlock">
       <h3>Einloggen</h3>
       <div class="formGroup">
-        <input type="text" class="formControl" placeholder="Benutzer Name" #userName required>
+        <div>Benutzername: testuser@test.ch Passwort: test1234</div>
+
+        <input type="text" class="formControl" placeholder="testuser@test.ch" #userName required >
       </div>
       <div class="formGroup">
-        <input type="password" class="formControl" placeholder="Passwort" #userPassword required>
+        <input type="password" class="formControl" placeholder="Passwort" #userPassword required >
       </div>
       <!-- Calling SignIn Api from AuthService -->
       <div class="formGroup">
