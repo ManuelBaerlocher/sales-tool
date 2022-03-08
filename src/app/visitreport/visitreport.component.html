@@ -90,7 +90,6 @@
     </div>
 
     <div>
-
         <mat-radio-group class="example-radio-group">
             <h2>Auslastung:</h2>
             <mat-radio-button class="example-radio-button" value="Gut">Gut</mat-radio-button>
@@ -99,11 +98,12 @@
             <mat-radio-button class="example-radio-button" value="Schlecht">Schlecht</mat-radio-button>
         </mat-radio-group>
     </div>
+
     <div>
         <mat-radio-group class="example-radio-group">
             <h2>Kundenportal:</h2>
             <mat-radio-button class="example-radio-button" value="Gut">Eingerichtet</mat-radio-button>
-            <mat-radio-button class="example-radio-button" value="Gut">Kein Bedarf</mat-radio-button>
+            <mat-radio-button class="example-radio-button" value="Kein Bedaf">Kein Bedarf</mat-radio-button>
             <mat-radio-button class="example-radio-button" value="Mittel">Zugang gewünscht
             </mat-radio-button>
         </mat-radio-group>
@@ -140,24 +140,32 @@
         </section>
     </div>
 
+    <div>
+        <mat-radio-group class="example-radio-group">
+            <h2>Schlusssatz:</h2>
+            <mat-radio-button class="example-radio-button" value="Gut">Gut</mat-radio-button>
+            <mat-radio-button class="example-radio-button" value="Mittel">Mittel
+            </mat-radio-button>
+            <mat-radio-button class="example-radio-button" value="Schlecht">Schlecht</mat-radio-button>
+        </mat-radio-group>
+    </div>
+
 
 
 
 
 
     <div>
-        <mat-form-field appearance="fill">
+        <mat-form-field appearance="outline">
             <mat-label>Textarea</mat-label>
             <textarea matInput></textarea>
         </mat-form-field>
     </div>
-    <div>
-        <button mat-raised-button color="primary">In Zwischenablage speichern</button>
-    </div>
+
 
     <div mat-dialog-actions class="dialog-action-buttons">
         <button mat-button (click)="onNoClick()">Cancel</button>
-        <button mat-button (click)="saveUser()">Save</button>
+        <button mat-button (click)="saveUser()">In Zwischenablage speichern</button>
     </div>
 </div>
 
